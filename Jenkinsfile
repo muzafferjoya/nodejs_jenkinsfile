@@ -27,9 +27,9 @@ pipeline {
             branch 'master'
           }
           steps {
-            withAWS(region:'us-east-1',credentials:'59acb262-1b84-47c6-91c6-0c386a4ca41f') {
+            withAWS(region:'us-east-1',credentials:'c6-0c386a4ca41f') {
               
-              s3Upload(bucket: 'eroam-front', workingDir:'build', includePathPattern:'**/*');
+              s3Upload(bucket: 'ront', workingDir:'build', includePathPattern:'**/*');
             }
             mail(subject: 'Staging Build', body: 'New Deployment to Staging', to: 'muzaffar@gmail.com')
           }
