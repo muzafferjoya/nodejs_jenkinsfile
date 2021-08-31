@@ -31,7 +31,7 @@ pipeline {
               
               s3Upload(bucket: 'eroam-front', workingDir:'build', includePathPattern:'**/*');
             }
-            mail(subject: 'Staging Build', body: 'New Deployment to Staging', to: 'muzaffar.khan@eroam.com')
+            mail(subject: 'Staging Build', body: 'New Deployment to Staging', to: 'muzaffar@gmail.com')
           }
         }
         
